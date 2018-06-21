@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NJDYSearchBarView_Example' do
+  pod 'NJDYSearchBarView', :path => '../'
+
+  target 'NJDYSearchBarView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
