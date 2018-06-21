@@ -10,7 +10,6 @@ public class NJDYSearchBarView: UIView {
     }
     
     required public init?(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
         super.init(coder: aDecoder)
     }
     
@@ -32,6 +31,8 @@ public class NJDYSearchBarView: UIView {
 
 extension NJDYSearchBarView {
     private func setupUI() {
-        backgroundColor = UIColor.orange
+        self.backgroundColor = UIColor.clear
+        let a = Bundle(for: NJDYSearchBarView.self)
+        print(a.bundlePath)
     }
 }
