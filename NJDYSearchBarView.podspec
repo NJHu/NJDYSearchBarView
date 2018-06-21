@@ -1,42 +1,34 @@
-#
-# Be sure to run `pod lib lint NJDYSearchBarView.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
+
 
 Pod::Spec.new do |s|
-  s.name             = 'NJDYSearchBarView'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of NJDYSearchBarView.'
+    s.name             = 'NJDYSearchBarView'
+    s.version          = '1.0.0'
+    s.summary          = 'NJDYSearchBarView, NJDYSearchBarView'
+    s.homepage         = 'https://github.com/njhu/NJDYSearchBarView'
+    s.license          = { :type => 'MIT', :file => 'LICENSE' }
+    s.author           = { 'njhu' => '64hp@163.com' }
+    s.social_media_url = 'http://weibo.com/njhu'
+    #s.source           = { :git => 'https://github.com/njhu/NJDYSearchBarView.git', :tag => s.version.to_s }
+    s.source           = { :git => 'https://github.com/njhu/NJDYSearchBarView.git', :branch =>'master' }
+    
+    s.description      = <<-DESC
+    NJDYSearchBarView, NJDYSearchBarView, NJDYSearchBarView, NJDYSearchBarView, NJDYSearchBarView, NJDYSearchBarView, NJDYSearchBarView
+    DESC
+    
+    
+    s.ios.deployment_target = '10.3'
+    s.requires_arc = true
+    
+    s.source_files = 'NJDYSearchBarView/Classes/**/*'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/njhu/NJDYSearchBarView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'njhu' => '64hp@163.com' }
-  s.source           = { :git => 'https://github.com/njhu/NJDYSearchBarView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'NJDYSearchBarView/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'NJDYSearchBarView' => ['NJDYSearchBarView/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    s.resource_bundles = {
+        'NJDYSearchBarView' => ['NJDYSearchBarView/Assets/**/*.{plist,webp,png}']
+    }
+    
+    s.resources     = 'NJDYSearchBarView/**/*.{xcassets}'
+    
+    s.frameworks   = 'UIKit'
+    s.dependency 'NJKit'
+    
 end
+
