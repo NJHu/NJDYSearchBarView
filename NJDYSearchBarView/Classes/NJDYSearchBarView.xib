@@ -33,10 +33,10 @@
                                 <constraint firstAttribute="height" constant="44" id="sQh-KY-dk0"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                            <state key="normal" title="消息">
+                            <state key="normal" image="image_my_history">
                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                             </state>
-                            <state key="highlighted">
+                            <state key="highlighted" image="Image_my_history_click">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                         </button>
@@ -59,12 +59,49 @@
                         <constraint firstItem="2Gn-2G-xbg" firstAttribute="centerY" secondItem="o2O-wm-xLG" secondAttribute="centerY" id="vwH-6s-3OT"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOb-JM-L1b">
+                    <rect key="frame" x="64" y="12" width="198" height="34"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbB-SA-cTH">
+                            <rect key="frame" x="0.0" y="0.0" width="154" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="推荐主题" image="btn_search">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="highlighted" image="btn_search_clicked"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhc-qW-dSi">
+                            <rect key="frame" x="158" y="0.0" width="40" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="CCb-lG-TJd"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                            <state key="normal" image="Image_scan"/>
+                            <state key="highlighted" image="Image_scan_click"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="zbB-SA-cTH" firstAttribute="leading" secondItem="ZOb-JM-L1b" secondAttribute="leading" id="FmG-zb-mpb"/>
+                        <constraint firstAttribute="bottom" secondItem="fhc-qW-dSi" secondAttribute="bottom" id="ILt-Zg-qH5"/>
+                        <constraint firstItem="fhc-qW-dSi" firstAttribute="top" secondItem="ZOb-JM-L1b" secondAttribute="top" id="Q1T-Px-oKM"/>
+                        <constraint firstAttribute="trailing" secondItem="zbB-SA-cTH" secondAttribute="trailing" constant="44" id="ZWD-Xy-Sc9"/>
+                        <constraint firstItem="zbB-SA-cTH" firstAttribute="top" secondItem="ZOb-JM-L1b" secondAttribute="top" id="dGF-hS-fmx"/>
+                        <constraint firstAttribute="bottom" secondItem="zbB-SA-cTH" secondAttribute="bottom" id="eYJ-aH-geN"/>
+                        <constraint firstAttribute="height" constant="34" id="jPk-vo-qLZ"/>
+                        <constraint firstAttribute="trailing" secondItem="fhc-qW-dSi" secondAttribute="trailing" id="kBX-1S-t7h"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="QTu-pq-zKM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Lf2-UF-8i7"/>
+                <constraint firstItem="o2O-wm-xLG" firstAttribute="leading" secondItem="ZOb-JM-L1b" secondAttribute="trailing" constant="10" id="SYh-pI-jTC"/>
+                <constraint firstItem="ZOb-JM-L1b" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZST-DQ-DuH"/>
                 <constraint firstAttribute="trailing" secondItem="o2O-wm-xLG" secondAttribute="trailing" id="ZdT-BL-QtX"/>
                 <constraint firstItem="o2O-wm-xLG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aQN-iM-K6y"/>
+                <constraint firstItem="ZOb-JM-L1b" firstAttribute="leading" secondItem="QTu-pq-zKM" secondAttribute="trailing" constant="10" id="iZn-lb-ruF"/>
                 <constraint firstItem="QTu-pq-zKM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wFF-6q-lCA"/>
                 <constraint firstAttribute="bottom" secondItem="o2O-wm-xLG" secondAttribute="bottom" id="yC9-mR-SAE"/>
             </constraints>
@@ -75,6 +112,10 @@
     </objects>
     <resources>
         <image name="Image_my_history_click" width="22" height="22"/>
+        <image name="Image_scan" width="22" height="22"/>
+        <image name="Image_scan_click" width="22" height="22"/>
+        <image name="btn_search" width="22" height="22"/>
+        <image name="btn_search_clicked" width="22" height="22"/>
         <image name="image_my_history" width="26" height="26"/>
     </resources>
 </document>
