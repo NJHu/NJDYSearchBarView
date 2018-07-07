@@ -18,6 +18,7 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QTu-pq-zKM">
                     <rect key="frame" x="10" y="7" width="44" height="44"/>
+                    <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="GQA-kT-8uV"/>
                         <constraint firstAttribute="width" constant="44" id="hoa-f4-wKT"/>
