@@ -23,8 +23,7 @@ public class NJDYSearchBarView: UIView {
     }
 
     static public func searchBarView() -> NJDYSearchBarView {
-        
-        let view = Bundle(for: NJDYSearchBarView.self).loadNibNamed("NJDYSearchBarView", owner: nil, options: nil)?.last
+        let view = Bundle.nj_curBundle(class: NJDYSearchBarView.self, bundleFile: "NJDYSearchBarView").loadNibNamed("NJDYSearchBarView", owner: nil, options: nil)?.last
         
         return view as! NJDYSearchBarView;
     }
