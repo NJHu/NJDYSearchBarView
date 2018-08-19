@@ -22,10 +22,8 @@ Pod::Spec.new do |s|
     s.source_files = 'NJDYSearchBarView/Classes/**/*'
 
     s.resource_bundles = {
-        'NJDYSearchBarView' => ['NJDYSearchBarView/Assets/**/*.{plist,webp,png}']
+        'NJDYSearchBarView' => ['NJDYSearchBarView/Assets/**/*.{plist,webp,png,xcassets}']
     }
-    
-    s.resources     = 'NJDYSearchBarView/**/*.{xcassets}'
     
     s.frameworks   = 'UIKit'
     s.dependency 'NJKit'
